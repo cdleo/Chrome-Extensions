@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Clarin Enabler",
+  "description": "This extension erases the Clarin web's login frame, to show the news without pay for a membership",
+  "version": "1.1",
+
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
+
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "background": {
+    "scripts": ["loginDeleter.js"]
+  },  
+  
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "loginDeleter.html",
+    "default_title": "Delete the Clarin web's login frame"
+  }
+
+}
